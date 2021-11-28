@@ -8,6 +8,8 @@
 }
 
 .navbar_container {
+    top: 0px;
+    position: sticky;
     padding: 5px;
 }
   
@@ -32,6 +34,10 @@
     text-align: center;
 }
 
+.name {
+    color: $link_hover_dark;
+}
+
 .page_header {
     text-align: center;
 }
@@ -40,17 +46,18 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px 20px 10px 20px;
 }
 
 .project_box {
-    margin: 25px;
+    margin: 15px;
     padding: 5px;
-    width: 43%;
+    width: 30%;
     height: 300px;
     color: $project_link_dark;;
     background-color: $project_bg_dark;
+    background-size: 100% 100%;
     box-shadow: 5px 5px 10px black;
     border-radius: 2px;
     transition: .5s;
@@ -67,13 +74,15 @@
 
 @media (max-width: 991px) {
     .project_box {
-        margin: 20px;
+        margin: 15px;
+        width: 40%
     }
 }
 
 @media (max-width: 767px) {
     .project_box {
         margin: 10px;
+        width: 100% !important;
     }
 }
 
