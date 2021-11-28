@@ -15,6 +15,7 @@
     margin: 5px;
 
     a {
+        transition: .3s;
         text-decoration: none;
         padding: 5px;
         color: $nav_text_dark;
@@ -22,7 +23,6 @@
     }
 
     a:hover {
-        transition: .3s;
         color: $link_hover_dark;
         border-bottom: $nav_text_dark solid 4px;
     }
@@ -45,34 +45,39 @@
 }
 
 .project_box {
-    margin: 10px;
+    margin: 25px;
     padding: 5px;
-    width: 40vw;
+    width: 43%;
     height: 300px;
     color: $project_link_dark;;
     background-color: $project_bg_dark;
     box-shadow: 5px 5px 10px black;
     border-radius: 2px;
+    transition: .5s;
 
     a {
+        transition: .3s;
         text-decoration: none;
         color: $project_link_dark;
     }
     a:hover {
-        transition: .3s;
         color: $link_hover_dark;
     }
 }
 
-@media screen and (max-width: 991px) {
-    
+@media (max-width: 991px) {
+    .project_box {
+        margin: 20px;
+    }
 }
 
-@media screen and (max-width: 767px) {
-
+@media (max-width: 767px) {
+    .project_box {
+        margin: 10px;
+    }
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
     .project_box {
         width: 100% !important;
     }
