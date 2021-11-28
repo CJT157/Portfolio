@@ -1,5 +1,3 @@
-import "../css/Global.scss";
-
 export default function Home() {
     return (
         <div className="homepage">

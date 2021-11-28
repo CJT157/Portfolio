@@ -1,5 +1,3 @@
-import "../css/Global.scss";
-
 export default function Projects() {
     function ProjectBox(props) {
         return (
@@ -12,7 +10,7 @@ export default function Projects() {
 
     return (
         <div>
-            <h3 className="page_header">Projects</h3>
+            <h2 className="page_header">Projects</h2>
             <div className="project_container">
                 <ProjectBox 
                     name={"Flower Classifier"} 

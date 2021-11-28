@@ -1,3 +1,33 @@
+@import "colors";
+
+.base {
+    background-color: $bg_dark;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: $text_dark;
+}
+
+.navbar_container {
+    padding: 5px;
+}
+  
+.navbar {
+    margin: 5px;
+
+    a {
+        text-decoration: none;
+        padding: 5px;
+        color: $nav_text_dark;
+        border-bottom: $link_hover_dark solid 2px;
+    }
+
+    a:hover {
+        transition: .3s;
+        color: $link_hover_dark;
+        border-bottom: $nav_text_dark solid 4px;
+    }
+}
+
 .homepage {
     text-align: center;
 }
@@ -19,17 +49,31 @@
     padding: 5px;
     width: 40vw;
     height: 300px;
-    color: white;
-    background-color: rgb(56, 56, 56);
+    color: $project_link_dark;;
+    background-color: $project_bg_dark;
     box-shadow: 5px 5px 10px black;
     border-radius: 2px;
 
     a {
         text-decoration: none;
-        color: rgb(223, 223, 223);
+        color: $project_link_dark;
     }
     a:hover {
         transition: .3s;
-        color: cornflowerblue;
+        color: $link_hover_dark;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 479px) {
+    .project_box {
+        width: 100% !important;
     }
 }
