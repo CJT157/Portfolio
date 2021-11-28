@@ -1,0 +1,27 @@
+.base {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navbar_container {
+  padding: 5px;
+}
+
+.navbar {
+  margin: 5px;
+
+  a {
+    text-decoration: none;
+    padding: 5px;
+    color: aliceblue;
+    border-bottom: cornflowerblue solid 2px;
+  }
+
+  a:hover {
+    transition: .3s;
+    color: cornflowerblue;
+    border-bottom: aliceblue solid 4px;
+  }
+}
